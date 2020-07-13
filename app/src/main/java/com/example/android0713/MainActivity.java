@@ -3,6 +3,7 @@ package com.example.android0713;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
@@ -24,5 +25,11 @@ public class MainActivity extends AppCompatActivity {
         Log.v(TAG, "onCreate"); // Verbose(가장 낮은 우선순위)
         Log.w(TAG, "onCreate"); // 경고
         Log.e(TAG, "onCreate"); // 에러
+
+        // 컨트롤러에서 뷰의 객체를 참조하는 방법
+        // 1. 뷰 객체에 id를 설정합니다. android:id="@+id/사용하고자 하는 아이디
+        // 2. 컨트롤러에서 해당 하이디로 객체의 참조를 얻어온다.
+        TextView textView = findViewById(R.id.byeTextView);
+        textView.setText("hello world");
     }
 }
