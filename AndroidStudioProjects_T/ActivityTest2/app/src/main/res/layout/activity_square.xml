@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SquareActivity">
+
+    <TextView android:id="@+id/number_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FF000000"
+        android:textSize="40sp" />
+
+    <Button android:id="@+id/square_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onButtonClick"
+        android:textColor="#FF000000"
+        android:text="DO SQUARE"
+        android:textSize="40sp" />
+
+    <Button android:id="@+id/cancel_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onButtonClick"
+        android:textColor="#FF000000"
+        android:text="CANCEL"
+        android:textSize="40sp" />
+
+</LinearLayout>

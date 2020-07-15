@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <EditText android:id="@+id/number_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="정수 입력"
+        android:textColor="#FF000000"
+        android:maxLines="1"
+        android:inputType="numberDecimal"
+        android:textSize="40sp"/>
+
+    <TextView android:id="@+id/result_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="결과 없음"
+        android:textColor="#FF000000"
+        android:textSize="40sp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SQUARE"
+        android:textSize="40sp"
+        android:onClick="onButtonClick" />
+</LinearLayout>
