@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "MSTest_0715_1"
